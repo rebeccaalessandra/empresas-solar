@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Solar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Pesquisa de Empresas de Energia Solar</h1>
+    </header>
+
+    <section class="filtro-box">
+
+        <input id="buscar" type="text" placeholder="Digite o nome da empresa">
+
+        <select id="estado">
+            <option value="">Todos os estados</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="GO">Goiás</option>
+        </select>
+
+        <button onclick="pesquisar()">Pesquisar</button>
+    </section>
+
+    <section class="tabela-box">
+
+        <table>
+    <thead>
+        <tr>
+            <th>Empresa</th>
+            <th>Contato</th>
+            <th>Endereço</th>
+            <th>Estado</th>
+        </tr>
+    </thead> 
+    <tbody id="resultado"></tbody> 
+</table>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

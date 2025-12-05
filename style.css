@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #8EDCFA;
+    font-family: Arial, sans-serif;
+}
+
+/* cabeçalho */
+header {
+    background:#595959;
+    color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* caixa do filtro */
+.filtro-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* borda caixas pesquisa */
+.filtro-box input,
+.filtro-box select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #44D2F2;
+    width: 250px;
+}
+
+.filtro-box button {
+    background: #44D2F2;
+    color: white;
+    border-top-right-radius: 2px solid #44D2F2;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filtro-box button:hover {
+    background: #F2F2F2;
+}
+
+/* tabela*/
+.tabela-box {
+    width: 95%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #F2F2F2;
+}
+
+th {
+    background: #595959;
+    color: #040911;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .filtro-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .filtro-box input,
+    .filtro-box select,
+    .filtro-box button {
+        width: 100%;
+    }
+}
